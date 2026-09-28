@@ -603,15 +603,13 @@ class SignUp4 extends StatelessWidget {
 
     if (firebaseUser != null) {
       micref.child(firebaseUser.uid);
-      //saves info to database
+      //saves profile info to database (the password stays in Firebase Auth only)
       Map userDataMap = {
         "firstname":
             textControllers.firstnameTextEditingController.value.text.trim(),
         "lastname":
             textControllers.lastnameTextEditingController.value.text.trim(),
         "phone": textControllers.phoneTextEditingController.value.text.trim(),
-        "password":
-            textControllers.passwordTextEditingController.value.text.trim(),
         "email": textControllers.emailTextEditingController.value.text.trim(),
       };
       micref.child(firebaseUser.uid).set(userDataMap);
