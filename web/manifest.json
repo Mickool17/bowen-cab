@@ -1,11 +1,11 @@
 {
-    "name": "fix",
-    "short_name": "fix",
+    "name": "Bowen Cab",
+    "short_name": "Bowen Cab",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Campus ride-hailing app for Bowen University.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

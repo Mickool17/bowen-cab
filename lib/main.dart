@@ -24,7 +24,7 @@ Future main() async {
 
   runApp(const MyApp());
 }
-DatabaseReference micref = FirebaseDatabase.instance.reference().child("users");
+DatabaseReference micref = FirebaseDatabase.instance.ref().child("users");
 
 Future Initialization(BuildContext? context) async {
   await Future.delayed(const Duration(seconds: 4));
